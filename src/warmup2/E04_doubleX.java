@@ -9,7 +9,8 @@ public class E04_doubleX {
         //        doubleX("axaxax") → false
         //        doubleX("xxxxx") → tru
 
-        String[] arr={"axxbb","axaxax","xxxxx"};
+        String[] arr={"axxbb","axaxax","xxxxx",
+                "xaxxx","aaaax","","abc","x","xax","xaxx"};
 
         for(String ara:arr){
             System.out.println(doubleX(ara));
@@ -19,12 +20,12 @@ public class E04_doubleX {
 
     public static boolean doubleX(String str) {
 
-        for (int i = 0; i < str.length()-3; i++) {
+        int i=str.indexOf("x");
 
-           if(str.substring(i,i+1).equals("x") && str.substring(i+1,i+2).equals("x")) {
-               return true;
-           }
-
+        if(str.contains("x")&&i+1<=str.length()-1){
+            if(str.substring(i,i+1).equals("x") && str.substring(i+1,i+2).equals("x")) {
+                return true;
+            }
         }
         return false;
     }
