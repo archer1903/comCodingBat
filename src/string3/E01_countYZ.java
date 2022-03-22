@@ -12,47 +12,29 @@ public class E01_countYZ {
 * (Note: Character.isLetter(char) tests if a char is an alphabetic letter.)
 * countYZ("fez day") → 2
 countYZ("day fez") → 2
-countYZ("day fyyyz") → 2*/
-
-        System.out.println(countYZ("fez day"));
+countYZ("day fyyyz") → 2
+* countYZ("!!day--yaz!!") → 2
+* countYZ("y2bz") → 2*/
+        System.out.println(countYZ("!!day--yaz!!"));
 
     }
 
     public static int countYZ(String str) {
 
         int counter = 0;
-        String space = " ";
-        String[] words = str.split("\\s+");
+        String[] words = str.split("\\W");
 
         for (int i = 0; i < words.length; i++) {
 
-            char lastChar = words[i].charAt(words.length - 1);
+            if (words[i] != "") {
+                char lastChar = words[i].charAt(words[i].length() - 1);
 
-            if (lastChar == 'y' || lastChar == 'z' || lastChar == 'Y' || lastChar == 'Z') {
-                counter++;
+                if (lastChar == 'y' || lastChar == 'z' || lastChar == 'Y' || lastChar == 'Z') {
+                    counter++;
+                }
             }
         }
-
-/*        int indy = str.indexOf('y');
-        int indz = str.indexOf('z');
-        int indY = str.indexOf('Y');
-        int indZ = str.indexOf('Z');
-
-        if (!space.equals(str.charAt(indy + 1))) {
-            counter++;
-        }
-        if (!space.equals(str.charAt(indz + 1))) {
-            counter++;
-        }
-        if (!space.equals(str.charAt(indY + 1))) {
-            counter++;
-        }
-        if (!space.equals(str.charAt(indZ + 1))) {
-            counter++;
-        }*/
-
         return counter;
 
     }
-
 }
