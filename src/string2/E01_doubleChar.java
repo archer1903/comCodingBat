@@ -17,7 +17,6 @@ public class E01_doubleChar {
             str2+=str.substring(i,i+1);
             str2+=str.substring(i,i+1);
         }
-
         return str2;
 
     }
