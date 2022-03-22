@@ -1,6 +1,8 @@
 package string3;
 
 
+import java.util.Arrays;
+
 public class E01_countYZ {
     public static void main(String[] args) {
 
@@ -22,9 +24,10 @@ countYZ("day fyyyz") → 2
     public static int countYZ(String str) {
 
         int counter = 0;
-        String[] words = str.split("\\W");
-
+        String[] words = str.split("[^a-zA-Z]");
+        System.out.println(Arrays.toString(words));
         for (int i = 0; i < words.length; i++) {
+
 
             if (words[i] != "") {
                 char lastChar = words[i].charAt(words[i].length() - 1);
