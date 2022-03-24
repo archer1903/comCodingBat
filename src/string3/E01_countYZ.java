@@ -28,9 +28,8 @@ countYZ("day fyyyz") → 2
         System.out.println(Arrays.toString(words));
         for (int i = 0; i < words.length; i++) {
 
-
             if (words[i] != "") {
-                char lastChar = words[i].charAt(words[i].length() - 1);
+                char lastChar = words[i].charAt(words[i].length()-1);
 
                 if (lastChar == 'y' || lastChar == 'z' || lastChar == 'Y' || lastChar == 'Z') {
                     counter++;
@@ -38,6 +37,5 @@ countYZ("day fyyyz") → 2
             }
         }
         return counter;
-
     }
 }
