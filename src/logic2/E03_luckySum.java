@@ -23,6 +23,5 @@ public class E03_luckySum {
         if(i2==13) return i+i1;
         else return i+i1+i2;
 
-
     }
 }
