@@ -1,6 +1,6 @@
 package warmup1;
 
-public class C29_lastDigit {/*Given two non-negative int values, return true if they have the same last digit, such as with 27 and 57. Note that the % "mod" operator computes remainders, so 17 % 10 is 7.
+public class E29_lastDigit {/*Given two non-negative int values, return true if they have the same last digit, such as with 27 and 57. Note that the % "mod" operator computes remainders, so 17 % 10 is 7.
 
 
 lastDigit(7, 17) → true
