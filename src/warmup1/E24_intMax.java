@@ -1,6 +1,6 @@
 package warmup1;
 
-public class C24_intMax {
+public class E24_intMax {
     public static void main(String[] args) {
         /*
 Given three int values, a b c, return the largest.
