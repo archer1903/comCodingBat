@@ -1,6 +1,6 @@
 package warmup1;
 
-public class C26_in3050 {/*
+public class E26_in3050 {/*
 Given 2 int values, return true if they are both in the range 30..40 inclusive, or they are both in the range 40..50 inclusive.
 
 
