@@ -1,6 +1,6 @@
 package warmup1;
 
-public class C28_stringE {/*
+public class E28_stringE {/*
 Return true if the given string contains between 1 and 3 'e' chars.
 
 
