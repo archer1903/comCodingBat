@@ -18,9 +18,11 @@ sum13([1, 2, 2, 1, 13]) → 6
 
 
 
+
     }
 
     public static int sum13(int[] nums) {
+
 
         int sum = 0;
 
@@ -40,6 +42,7 @@ sum13([1, 2, 2, 1, 13]) → 6
             }
             sum+=i;
         }
+
         return sum;
     }
 }
