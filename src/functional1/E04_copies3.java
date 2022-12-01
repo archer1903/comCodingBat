@@ -19,10 +19,12 @@ copies3(["hello", "there"]) → ["hellohellohello", "theretherethere"]
         System.out.println(copies3(str));
 
 
+
     }
     public static List<String> copies3(List<String> strings) {
 
-        strings.replaceAll(s->s.repeat(3));
+        strings.replaceAll(s->s+s+s);
+        //s.repeat(3) ??
         return strings;
 
     }
