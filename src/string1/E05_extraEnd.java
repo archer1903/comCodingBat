@@ -12,16 +12,16 @@ extraEnd("ab") → "ababab"
 extraEnd("Hi") → "HiHiHi"
 */
 
-        System.out.println( extraEnd("Hi"));
+        System.out.println(extraEnd("Hi"));
     }
 
     private static String extraEnd(String str) {
 
-        if(str.length()>=2)
-        return str.substring(str.length()-2).repeat(3);
+        // return str.substring(str.length()-2).repeat(3); ??
+        if (str.length() >= 2)
+            return str.substring(str.length() - 2) + str.substring(str.length() - 2) + str.substring(str.length() - 2);
 
-        return "null";
-
+        return null;
     }
 
 
